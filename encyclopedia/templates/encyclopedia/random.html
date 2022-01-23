@@ -1,0 +1,13 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Random Page
+{% endblock %}
+
+{% block body %}
+
+    <h1>Your Random Page for the Day:</h1><br>
+  
+    {{ entry | safe}}  
+
+{% endblock %}

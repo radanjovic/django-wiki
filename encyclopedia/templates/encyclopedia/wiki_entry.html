@@ -1,0 +1,13 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+{{ title | safe }}
+{% endblock %}
+
+{% block body %}
+    
+    <p> {{ entry | safe }}</p>
+    <br>
+    <a style="text-decoration: none; background-color: rgb(236, 233, 233); border: thin solid rgb(95, 95, 95); color: black; padding: 3px 5px;" href="{% url 'edit' title %}">Edit Page</a>
+
+{% endblock %}

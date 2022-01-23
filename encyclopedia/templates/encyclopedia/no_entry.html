@@ -1,0 +1,14 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Error - No Entry
+{% endblock %}
+
+{% block body %}
+    <br>
+    <h3>Error: No Such Entry</h3>
+    
+    <p>Entry with provided name has not been found.</p>
+    <p><a href="{% url 'create' %}">Create</a> a page for your entry or browse <a href="{% url 'index' %}">all entries</a>.</p>
+
+{% endblock %}
